@@ -1,9 +1,12 @@
 import pygame
 import random
 
+from utils import resource_path
+
+
 class Enemy:
     def __init__(self, width, height):
-        self.image = pygame.image.load('./assets/busto.png').convert_alpha()
+        self.image = pygame.image.load(resource_path('./assets/busto.png')).convert_alpha()
         self.image = pygame.transform.scale(self.image, (50, 50))
 
         self.rect = self.image.get_rect()

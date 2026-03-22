@@ -3,6 +3,9 @@ from code.Enemy import Enemy
 import pygame
 import pygame.image
 
+from utils import resource_path
+
+
 class Level:
     def __init__(self, window, name, option):
         self.window = window
@@ -19,10 +22,10 @@ class Level:
         self.start_time = pygame.time.get_ticks()
 
 
-        self.bg1 = pygame.image.load('./assets/level1bg1.png').convert_alpha()
-        self.bg2 = pygame.image.load('./assets/level1bg2.png').convert_alpha()
-        self.bg3 = pygame.image.load('./assets/level1bg3.png').convert_alpha()
-        self.bg4 = pygame.image.load('./assets/level1bg4.png').convert_alpha()
+        self.bg1 = pygame.image.load(resource_path('assets/level1bg1.png')).convert_alpha()
+        self.bg2 = pygame.image.load(resource_path('assets/level1bg2.png')).convert_alpha()
+        self.bg3 = pygame.image.load(resource_path('assets/level1bg3.png')).convert_alpha()
+        self.bg4 = pygame.image.load(resource_path('assets/level1bg4.png')).convert_alpha()
 
         self.bg1_x = 0
         self.bg2_x = 0

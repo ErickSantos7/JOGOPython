@@ -6,19 +6,20 @@ from pygame import Rect
 from pygame import Surface
 
 from code.Const import WIN_WIDTH, OPCAO_JOGO, menu_jogo, CONTROLES
+from utils import resource_path
 
 
 class Menu:
     def __init__(self,window):
         self.window = window
-        self.surf = pygame.image.load('./assets/menu.png')
+        self.surf = pygame.image.load(resource_path('assets/menu.png'))
         self.rect = self.surf.get_rect(left=0, top=0)
 
 
 
     def run(self, ):
         menu_jogo = 0
-        pygame.mixer_music.load('./assets/menu.mp3')
+        pygame.mixer_music.load(resource_path('assets/menu.mp3'))
         pygame.mixer_music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)

@@ -1,12 +1,15 @@
 import pygame
 
+from utils import resource_path
+
+
 class Player:
     def __init__(self):
         self.rect = pygame.Rect(100, 200, 100, 100)
         self.speed = 5
 
 
-        self.sprite_sheet = pygame.image.load('./assets/player.png').convert_alpha()
+        self.sprite_sheet = pygame.image.load(resource_path('./assets/player.png')).convert_alpha()
 
         self.frame_width = 128
         self.frame_height = 128

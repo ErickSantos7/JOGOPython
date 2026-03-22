@@ -1,0 +1,9 @@
+import os
+import sys
+
+
+def resource_path(relative_path):
+    # Caminho da pasta onde está o main.py
+    base_path = os.path.dirname(os.path.abspath(sys.argv[0]))
+
+    return os.path.join(base_path, relative_path)
