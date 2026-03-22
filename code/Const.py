@@ -1,12 +1,15 @@
 WIN_WIDTH = 576
-WIND_HEIGHT =324
+WIN_HEIGHT =324
+menu_jogo = 0
 
-OPCAO_JOGO = (' INICIAR JOGO',
-              'SCORE',
-               'EXIT',
-              
-            ' CONTROLES DO JOGO:',
-            ' A = PARA ESQUERDA',
-            ' D = PARA DIREITA',
-            ' ESPAÇO = ATIRAR'
-)
+OPCAO_JOGO = ('INICIAR JOGO',
+              'EXIT',)
+
+CONTROLES = ('CONTROLES DO JOGO:',
+            'A = PARA ESQUERDA',
+             'W = PARA CIMA',
+             'S = PARA BAIXO',
+            'D = PARA DIREITA',
+            'ESPAÇO = CORTAR')
+
+
